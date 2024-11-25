@@ -73,7 +73,6 @@ export default function ClippedDrawer({ children }: ClippedDrawerProps) {
                 component="main"
                 sx={{
                     flexGrow: 1,
-                    p: 3,
                 }}
             >
                 <Toolbar />
