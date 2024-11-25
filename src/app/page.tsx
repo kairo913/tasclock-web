@@ -18,6 +18,7 @@ export default function Home() {
                 flexDirection: "column",
                 height: { xs: "calc(100vh - 56px)", sm: "calc(100vh - 64px)" },
                 p: 3,
+                gap: 2,
             }}
         >
             <Box
@@ -26,7 +27,7 @@ export default function Home() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    mb: 3,
+                    order: { xs: 2, sm: 1 },
                 }}
             >
                 <TextField
@@ -46,7 +47,7 @@ export default function Home() {
                     }}
                 />
             </Box>
-            <Card variant="outlined" sx={{ p: 2, width: "100%" }}>
+            <Card variant="outlined" sx={{ p: 2, width: "100%", order: { xs: 1, sn: 2 } }}>
                 <Typography variant="h5">Active Task</Typography>
                 <Typography variant="body1">This is a task that is currently active.</Typography>
             </Card>

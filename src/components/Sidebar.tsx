@@ -13,11 +13,17 @@ import ListItemText from "@mui/material/ListItemText";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Divider from "@mui/material/Divider";
+import TaskTimer from "./TaskTimer";
 
 const drawerWidth = 240;
 
 interface ClippedDrawerProps {
     children?: React.ReactNode;
+}
+
+interface Task {
+    elapsed: number;
 }
 
 export default function ClippedDrawer({ children }: ClippedDrawerProps) {
@@ -50,6 +56,9 @@ export default function ClippedDrawer({ children }: ClippedDrawerProps) {
                     display: { xs: "none", sm: "block" },
                 }}
             >
+                {/* Todo: Add Fetch Task Logic */}
+                <TaskTimer task={{ elapsed: 100 } as Task} />
+                <Divider />
                 <List>
                     <ListItem disablePadding>
                         <ListItemButton>
