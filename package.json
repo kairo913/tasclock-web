@@ -6,7 +6,7 @@
         "build": "next build",
         "start": "node .next/standalone/server.js",
         "lint": "next lint",
-        "prepare": "husky install"
+        "prepare": "husky"
     },
     "dependencies": {
         "@emotion/cache": "^11.13.5",
