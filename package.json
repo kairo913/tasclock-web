@@ -6,6 +6,7 @@
         "build": "next build",
         "start": "node .next/standalone/server.js",
         "lint": "next lint",
+        "format": "prettier --write .",
         "prepare": "husky"
     },
     "dependencies": {
