@@ -18,9 +18,7 @@ export default function ThemeSwitcher() {
         <FormControl>
             <Select
                 value={mode}
-                onChange={(event) =>
-                    setMode(event.target.value as "light" | "dark" | "system")
-                }
+                onChange={(event) => setMode(event.target.value as "light" | "dark" | "system")}
                 variant="standard"
                 name="theme"
                 inputProps={{ "aria-label": "Select Theme" }}
@@ -35,24 +33,15 @@ export default function ThemeSwitcher() {
                 disableUnderline
             >
                 <MenuItem value="system" sx={{ gap: 1 }}>
-                    <ComputerIcon
-                        fontSize="small"
-                        sx={{ verticalAlign: "middle" }}
-                    />
+                    <ComputerIcon fontSize="small" sx={{ verticalAlign: "middle" }} />
                     自動
                 </MenuItem>
                 <MenuItem value="light" sx={{ gap: 1 }}>
-                    <LightModeIcon
-                        fontSize="small"
-                        sx={{ verticalAlign: "middle" }}
-                    />
+                    <LightModeIcon fontSize="small" sx={{ verticalAlign: "middle" }} />
                     ライト
                 </MenuItem>
                 <MenuItem value="dark" sx={{ gap: 1 }}>
-                    <DarkModeIcon
-                        fontSize="small"
-                        sx={{ verticalAlign: "middle" }}
-                    />
+                    <DarkModeIcon fontSize="small" sx={{ verticalAlign: "middle" }} />
                     ダーク
                 </MenuItem>
             </Select>

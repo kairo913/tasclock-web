@@ -3,6 +3,7 @@ import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import pluginNext from "@next/eslint-plugin-next";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -20,5 +21,6 @@ export default [
     },
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
+    eslintConfigPrettier,
     pluginReact.configs.flat.recommended,
 ];

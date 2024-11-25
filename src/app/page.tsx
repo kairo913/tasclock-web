@@ -32,10 +32,7 @@ export default function Home() {
                         input: {
                             endAdornment: (
                                 <InputAdornment position="end">
-                                    <IconButton
-                                        aria-label="Search Button"
-                                        edge="end"
-                                    >
+                                    <IconButton aria-label="Search Button" edge="end">
                                         <SearchIcon fontSize="medium" />
                                     </IconButton>
                                 </InputAdornment>
@@ -46,9 +43,7 @@ export default function Home() {
             </Box>
             <Card variant="outlined" sx={{ p: 2, width: "100%" }}>
                 <Typography variant="h5">Active Task</Typography>
-                <Typography variant="body1">
-                    This is a task that is currently active.
-                </Typography>
+                <Typography variant="body1">This is a task that is currently active.</Typography>
             </Card>
         </Box>
     );
