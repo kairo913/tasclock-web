@@ -32,7 +32,10 @@ export default function Home() {
                         input: {
                             endAdornment: (
                                 <InputAdornment position="end">
-                                    <IconButton aria-label="Search Button" edge="end">
+                                    <IconButton
+                                        aria-label="Search Button"
+                                        edge="end"
+                                    >
                                         <SearchIcon fontSize="medium" />
                                     </IconButton>
                                 </InputAdornment>
