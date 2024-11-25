@@ -20,6 +20,7 @@ export default function ThemeSwitcher() {
                 }
                 variant="standard"
                 name="theme"
+                inputProps={{ 'aria-label': 'Select Theme' }}
                 sx={{
                     minWidth: 100,
                     "& .MuiSelect-select": {
