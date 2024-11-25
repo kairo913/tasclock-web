@@ -7,7 +7,6 @@ import "@fontsource-variable/noto-sans-jp";
 import { Noto_Sans_JP } from "next/font/google";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import ClippedSidebar from "../components/Sidebar";
-import "./global.css";
 
 export const metadata: Metadata = {
     title: "Tasclock",

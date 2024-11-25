@@ -6,13 +6,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
+import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 const drawerWidth = 240;
@@ -48,9 +47,9 @@ export default function ClippedDrawer({ children }: ClippedDrawerProps) {
                         boxSizing: "border-box",
                         marginTop: "64px",
                     },
+                    display: { xs: "none", sm: "block" },
                 }}
             >
-                <Divider />
                 <List>
                     <ListItem disablePadding>
                         <ListItemButton>

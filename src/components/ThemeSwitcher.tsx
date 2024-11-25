@@ -1,5 +1,8 @@
 "use client";
-import { FormControl, MenuItem, Select, useColorScheme } from "@mui/material";
+import FormControl from "@mui/material/FormControl";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import { useColorScheme } from "@mui/material";
 import React from "react";
 import ComputerIcon from "@mui/icons-material/Computer";
 import LightModeIcon from "@mui/icons-material/LightMode";
@@ -20,7 +23,7 @@ export default function ThemeSwitcher() {
                 }
                 variant="standard"
                 name="theme"
-                inputProps={{ 'aria-label': 'Select Theme' }}
+                inputProps={{ "aria-label": "Select Theme" }}
                 sx={{
                     minWidth: 100,
                     "& .MuiSelect-select": {
